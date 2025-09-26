@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظم الوسائط المتعددة - التعليم التفاعلي</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="script.js"></script>
+    <!-- الهيدر -->
+    <header class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                📚 نظم الوسائط المتعددة
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">عن المقرر</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-secondary me-2" id="darkModeBtn" onclick="toggleDarkMode()">
+                            🌙 الوضع الليلي
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- قسم البطل (Hero) -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-80">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">نظم الوسائط المتعددة</h1>
+                    <p class="hero-subtitle">تجربة تعليمية تفاعلية تجمع بين النص، الصور، الصوت، والفيديو</p>
+                </div>
+                <div class="col-lg-6">
+                    <!-- مكان للصورة الرئيسية (سيضيفها طالب الصور لاحقاً) -->
+                    <div class="placeholder-image">صورة رئيسية ستضاف لاحقاً</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم أنواع الوسائط -->
+    <section class="media-types py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">أنواع الوسائط المتعددة</h2>
+            <div class="row">
+                <!-- النصوص -->
+                <div class="col-md-3 mb-4">
+                    <div class="media-card">
+                        <div class="media-icon">📝</div>
+                        <h3>النصوص</h3>
+                        <p>شرح عن النصوص الرقمية وتنسيقاتها</p>
+                    </div>
+                </div>
+                <!-- الصور -->
+                <div class="col-md-3 mb-4">
+                    <div class="media-card">
+                        <div class="media-icon">🖼️</div>
+                        <h3>الصور</h3>
+                        <p>الصور الرقمية وتقنيات الضغط</p>
+                    </div>
+                </div>
+                <!-- الصوت -->
+                <div class="col-md-3 mb-4">
+                    <div class="media-card">
+                        <div class="media-icon">🎵</div>
+                        <h3>الصوت</h3>
+                        <p>الموسيقى والتسجيلات الصوتية</p>
+                    </div>
+                </div>
+                <!-- الفيديو -->
+                <div class="col-md-3 mb-4">
+                    <div class="media-card">
+                        <div class="media-icon">🎬</div>
+                        <h3>الفيديو</h3>
+                        <p>الفيديو الرقمي والرسوم المتحركة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم معرض الصور -->
+    <section class="gallery-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">معرض الوسائط</h2>
+            <div class="row" id="imageGallery">
+                <!-- الصور ستضاف هنا لاحقاً -->
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-placeholder">صورة ١</div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-placeholder">صورة ٢</div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-placeholder">صورة ٣</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الفيديو التعليمي -->
+    <section class="video-section py-5">
+        <!-- في قسم الفيديو، بعد video-placeholder -->
+<div class="text-center mt-3">
+    <button class="btn btn-primary" onclick="toggleVideo()">
+        تشغيل/إيقاف الفيديو
+    </button>
+    <button class="btn btn-outline-secondary ms-2" onclick="toggleDarkMode()">
+        الوضع الليلي
+    </button>
+</div>
+        <div class="container">
+            <h2 class="section-title text-center mb-5">فيديو تعليمي</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="video-placeholder">
+                        <!-- الفيديو سيضاف هنا لاحقاً -->
+                        🎥 مكان الفيديو التعليمي
+                    </div>
+                    <div class="video-description mt-3">
+                        <p>شرح مفصل عن تقنيات الوسائط المتعددة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الذكاء الاصطناعي -->
+    <section class="ai-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">محتويات مولدة بالذكاء الاصطناعي</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="ai-content">
+                        <h4>نص مولّد بالذكاء الاصطناعي</h4>
+                        <p>هذا النص سيكون مولّداً باستخدام أدوات الذكاء الاصطناعي</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ai-image-placeholder">
+                        🖼️ صورة مولدة بالذكاء الاصطناعي
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; Hamza Abo Lethoo</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <p>Lethoo</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

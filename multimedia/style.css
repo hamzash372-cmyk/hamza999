@@ -1,0 +1,762 @@
+/* ===== إعدادات عامة ===== */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --dark-bg: #2c3e50;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    direction: rtl;
+    scroll-behavior: smooth;
+}
+
+/* ===== الهيدر ===== */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    transition: var(--transition);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--secondary-color) !important;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: var(--transition);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--secondary-color) !important;
+}
+
+/* ===== قسم البطل (Hero) ===== */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #34495e 100%);
+    color: white;
+    padding: 4rem 0;
+}
+
+.min-vh-80 {
+    min-height: 80vh;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+.placeholder-image {
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    border: 2px dashed rgba(255,255,255,0.3);
+}
+
+/* ===== قسم أنواع الوسائط ===== */
+.media-types {
+    background: white;
+    padding: 4rem 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    position: relative;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 80px;
+    height: 4px;
+    background: var(--secondary-color);
+    border-radius: 2px;
+}
+
+.media-card {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: var(--transition);
+    height: 100%;
+    border: 1px solid #eee;
+}
+
+.media-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.media-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.media-card h3 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.media-card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* ===== معرض الصور ===== */
+.gallery-section {
+    background: var(--light-bg);
+    padding: 4rem 0;
+}
+
+.gallery-placeholder {
+    background: white;
+    border-radius: 10px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: #666;
+    border: 2px dashed #ddd;
+    transition: var(--transition);
+}
+
+.gallery-placeholder:hover {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+/* ===== قسم الفيديو ===== */
+.video-section {
+    padding: 4rem 0;
+}
+
+.video-placeholder {
+    background: linear-gradient(45deg, #34495e, #2c3e50);
+    border-radius: 15px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.video-placeholder:hover {
+    transform: scale(1.02);
+}
+
+.video-placeholder::before {
+    content: '▶';
+    font-size: 4rem;
+    opacity: 0.7;
+    margin-left: 1rem;
+}
+
+.video-description {
+    text-align: center;
+    color: #666;
+    margin-top: 1rem;
+}
+
+/* ===== قسم الذكاء الاصطناعي ===== */
+.ai-section {
+    padding: 4rem 0;
+    background: var(--light-bg);
+}
+
+.ai-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.ai-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.ai-image-placeholder {
+    background: white;
+    border-radius: 10px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    border: 2px dashed #ddd;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== الفوتر ===== */
+footer {
+    background: var(--dark-bg) !important;
+    color: white;
+    padding: 2rem 0;
+}
+
+/* ===== أنماط صفحة about.html ===== */
+
+.course-intro {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 0;
+}
+
+.course-intro .section-title {
+    color: white;
+    font-size: 3rem;
+}
+
+.course-intro .lead {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+/* بطاقات الموضوعات */
+.topics-section {
+    padding: 4rem 0;
+}
+
+.topic-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    height: 100%;
+    transition: var(--transition);
+}
+
+.topic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.topic-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.topic-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.topic-list {
+    list-style: none;
+    padding: 0;
+}
+
+.topic-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-right: 1.5rem;
+}
+
+.topic-list li::before {
+    content: '✓';
+    position: absolute;
+    right: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* بطاقات التطبيقات */
+.applications-section {
+    padding: 4rem 0;
+}
+
+.app-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    height: 100%;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.app-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.app-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* فريق العمل */
+.team-section {
+    padding: 4rem 0;
+}
+
+.team-card {
+    background: white;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    transition: var(--transition);
+}
+
+.team-card:hover {
+    transform: translateY(-3px);
+}
+
+.team-avatar {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.team-card h5 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.team-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* الأهداف التعليمية */
+.objectives-section {
+    padding: 4rem 0;
+}
+
+.objective-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.objective-number {
+    background: var(--secondary-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-left: 1rem;
+    flex-shrink: 0;
+}
+
+.objective-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* ===== أزرار تفاعلية ===== */
+.btn {
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-outline-secondary {
+    border-color: #6c757d;
+    color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background: #6c757d;
+    border-color: #6c757d;
+    color: white;
+}
+
+/* ===== تأثيرات JavaScript ===== */
+.media-card {
+    transition: all 0.3s ease;
+}
+
+header {
+    transition: all 0.3s ease;
+}
+
+/* الوضع الليلي */
+.dark-mode {
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark-mode .media-card {
+    background: #2d2d2d;
+    color: #ffffff;
+}
+
+.dark-mode .app-card,
+.dark-mode .topic-card,
+.dark-mode .team-card,
+.dark-mode .objective-item {
+    background: #2d2d2d;
+    color: #ffffff;
+}
+
+/* ===== التجاوب (Responsive) ===== */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .media-card {
+        margin-bottom: 1rem;
+    }
+    
+    .video-placeholder {
+        height: 250px;
+    }
+    
+    .course-intro .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .objective-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .objective-number {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .media-card {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* ===== تأثيرات التمرير (Scroll) ===== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== تحسينات عامة ===== */
+.container {
+    max-width: 1200px;
+}
+
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.ms-2 {
+    margin-right: 0.5rem !important;
+}
+
+.text-md-end {
+    text-align: left !important;
+}
+
+@media (min-width: 768px) {
+    .text-md-end {
+        text-align: right !important;
+    }
+}
+/* ===== الوضع الليلي الكامل ===== */
+body.dark-mode {
+    background: #0a0a0a;
+    color: #e0e0e0;
+}
+
+.dark-mode header {
+    background: #1a1a1a !important;
+}
+
+.dark-mode .navbar {
+    background: #1a1a1a !important;
+}
+
+.dark-mode .navbar-brand {
+    color: #3498db !important;
+}
+
+.dark-mode .nav-link {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .nav-link:hover,
+.dark-mode .nav-link.active {
+    color: #3498db !important;
+}
+
+.dark-mode .hero-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+}
+
+.dark-mode .media-types {
+    background: #0a0a0a;
+}
+
+.dark-mode .gallery-section {
+    background: #1a1a1a;
+}
+
+.dark-mode .ai-section {
+    background: #1a1a1a;
+}
+
+.dark-mode .topics-section {
+    background: #1a1a1a;
+}
+
+.dark-mode .applications-section {
+    background: #0a0a0a;
+}
+
+.dark-mode .team-section {
+    background: #1a1a1a;
+}
+
+.dark-mode .objectives-section {
+    background: #0a0a0a;
+}
+
+.dark-mode footer {
+    background: #1a1a1a !important;
+}
+
+/* البطاقات في الوضع الليلي */
+.dark-mode .media-card,
+.dark-mode .topic-card,
+.dark-mode .app-card,
+.dark-mode .team-card,
+.dark-mode .objective-item,
+.dark-mode .ai-content {
+    background: #2d2d2d !important;
+    color: #e0e0e0 !important;
+    border-color: #404040 !important;
+}
+
+.dark-mode .media-card h3,
+.dark-mode .topic-card h3,
+.dark-mode .app-card h4,
+.dark-mode .team-card h5,
+.dark-mode .objective-content h4 {
+    color: #3498db !important;
+}
+
+.dark-mode .media-card p,
+.dark-mode .topic-list li,
+.dark-mode .app-card p,
+.dark-mode .team-card p,
+.dark-mode .objective-content p {
+    color: #b0b0b0 !important;
+}
+
+/* العناصر النصية */
+.dark-mode .section-title {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .section-title::after {
+    background: #3498db !important;
+}
+
+.dark-mode .lead {
+    color: #b0b0b0 !important;
+}
+
+/* العناصر التفاعلية */
+.dark-mode .placeholder-image {
+    background: rgba(255,255,255,0.05) !important;
+    border-color: #404040 !important;
+    color: #b0b0b0 !important;
+}
+
+.dark-mode .gallery-placeholder {
+    background: #2d2d2d !important;
+    border-color: #404040 !important;
+    color: #b0b0b0 !important;
+}
+
+.dark-mode .ai-image-placeholder {
+    background: #2d2d2d !important;
+    border-color: #404040 !important;
+    color: #b0b0b0 !important;
+}
+
+.dark-mode .video-placeholder {
+    background: linear-gradient(45deg, #2d2d2d, #404040) !important;
+}
+
+/* الأزرار في الوضع الليلي */
+.dark-mode .btn-outline-secondary {
+    border-color: #b0b0b0 !important;
+    color: #b0b0b0 !important;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+    background: #b0b0b0 !important;
+    color: #1a1a1a !important;
+}
+
+/* قوائم الوضع الليلي */
+.dark-mode .topic-list li {
+    border-bottom-color: #404040 !important;
+}
+
+.dark-mode .topic-list li::before {
+    color: #3498db !important;
+}
+
+/* تأثيرات خاصة للوضع الليلي */
+.dark-mode .media-card:hover,
+.dark-mode .topic-card:hover,
+.dark-mode .app-card:hover,
+.dark-mode .team-card:hover {
+    box-shadow: 0 10px 30px rgba(52, 152, 219, 0.2) !important;
+}
+/* إصلاح نهائي للخلفيات البيضاء */
+.dark-mode body * {
+    background-color: transparent !important;
+}
+
+.dark-mode .container-fluid,
+.dark-mode .container,
+.dark-mode .row,
+.dark-mode [class*="col-"] {
+    background: transparent !important;
+}
+
+/* تأكد من أن جميع الأقسام شفافة */
+.dark-mode section,
+.dark-mode div,
+.dark-mode main,
+.dark-mode article,
+.dark-mode aside {
+    background: transparent !important;
+}
+
+/* استثناء العناصر التي تحتاج خلفية */
+.dark-mode .media-card,
+.dark-mode .topic-card,
+.dark-mode .app-card,
+.dark-mode .team-card,
+.dark-mode .objective-item,
+.dark-mode .ai-content,
+.dark-mode .navbar,
+.dark-mode footer,
+.dark-mode .video-placeholder,
+.dark-mode .gallery-placeholder,
+.dark-mode .ai-image-placeholder,
+.dark-mode .placeholder-image {
+    background: var(--dark-bg) !important;
+}

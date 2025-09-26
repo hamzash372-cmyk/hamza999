@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن المقرر - نظم الوسائط المتعددة</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="script.js"></script>
+    <!-- الهيدر -->
+    <header class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                📚 نظم الوسائط المتعددة
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">عن المقرر</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-secondary me-2" id="darkModeBtn" onclick="toggleDarkMode()">
+                            🌙 الوضع الليلي
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- قسم مقدمة عن المقرر -->
+    <section class="course-intro py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="section-title mb-4">نظم الوسائط المتعددة</h1>
+                    <p class="lead">مقرر يهدف إلى فهم المبادئ الأساسية لأنظمة الوسائط المتعددة وتطبيقاتها العملية في العالم الرقمي.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="placeholder-image">صورة توضيحية عن المقرر</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الموضوعات الرئيسية -->
+    <section class="topics-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">الموضوعات الرئيسية</h2>
+            <div class="row">
+                <!-- الموضوع 1 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="topic-card">
+                        <div class="topic-icon">🎯</div>
+                        <h3>الموضوع الأول: أنواع وسائط المتعددة</h3>
+                        <ul class="topic-list">
+                            <li>النصوص والصور الثابتة</li>
+                            <li>الصوت والموسيقى الرقمية</li>
+                            <li>الفيديو والرسوم المتحركة</li>
+                            <li>الوسائط التشعبية والتفاعلية</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- الموضوع 2 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="topic-card">
+                        <div class="topic-icon">💾</div>
+                        <h3>الموضوع الثاني: تقنيات الضغط</h3>
+                        <ul class="topic-list">
+                            <li>ضغط الصور (JPEG, PNG, WebP)</li>
+                            <li>ضغط الفيديو (MP4, AVI, MKV)</li>
+                            <li>ضغط الصوت (MP3, AAC, WAV)</li>
+                            <li>مقارنة بين تقنيات الضغط</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التطبيقات العملية -->
+    <section class="applications-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">التطبيقات العملية</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="app-card">
+                        <h4>التعليم الإلكتروني</h4>
+                        <p>استخدام الوسائط المتعددة في تقديم المحتوى التعليمي بشكل تفاعلي</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="app-card">
+                        <h4>التسويق الرقمي</h4>
+                        <p>استغلال الوسائط المتعددة في الحملات الإعلانية والتسويقية</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="app-card">
+                        <h4>التصميم الجرافيكي</h4>
+                        <p>دمج أنواع الوسائط المختلفة في التصاميم الإبداعية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- قسم الأهداف التعليمية -->
+    <section class="objectives-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">الأهداف التعليمية</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="objective-item">
+                        <span class="objective-number">01</span>
+                        <div class="objective-content">
+                            <h4>الفهم النظري</h4>
+                            <p>فهم المفاهيم الأساسية للوسائط المتعددة وتقنياتها</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="objective-item">
+                        <span class="objective-number">02</span>
+                        <div class="objective-content">
+                            <h4>التطبيق العملي</h4>
+                            <p>تطبيق المعارف في مشاريع وسائط متعددة حقيقية</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="objective-item">
+                        <span class="objective-number">03</span>
+                        <div class="objective-content">
+                            <h4>التقييم النقدي</h4>
+                            <p>تحليل وتقييم أنظمة الوسائط المتعددة المختلفة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="objective-item">
+                        <span class="objective-number">04</span>
+                        <div class="objective-content">
+                            <h4>الإبداع والابتكار</h4>
+                            <p>تطوير حلول إبداعية باستخدام الوسائط المتعددة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; Hamza Abo Lethoo</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <p>Lethoo</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
