@@ -2,6 +2,7 @@ import telebot
 from telebot import types
 import json
 import os
+from flask import Flask
 
 # ================= إعدادات البوت =================
 # ضع التوكن الخاص بك هنا
@@ -248,3 +249,19 @@ def go_home(message):
 if __name__ == "__main__":
     print("🚀 البوت يعمل الآن 24/7...")
     bot.infinity_polling(timeout=10, long_polling_timeout=5)
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return "Bot is running!"
+
+if __name__ == "__main__":
+    # تشغيل سيرفر ويب بسيط بجانب البوت
+    from threading import Thread
+    def run():
+        app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+    
+    Thread(target=run).start()
+    print("🚀 البوت يعمل الآن مجاناً...")
+    bot.infinity_polling()
